@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <style>
+    :root {
+      --primary: #4f46e5;
+      --bg: #f9fafb;
+      --text: #111827;
+      --card: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--card);
+      padding: 2rem 1rem;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      background: #ddd;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+    }
+
+    header p {
+      color: #555;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: 500;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background: var(--card);
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+      color: var(--primary);
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .skill {
+      background: #eef2ff;
+      padding: 0.5rem 0.8rem;
+      border-radius: 999px;
+      font-size: 0.9rem;
+    }
+
+    .item {
+      margin-bottom: 1rem;
+    }
+
+    .item h3 {
+      font-size: 1.1rem;
+    }
+
+    .item span {
+      font-size: 0.85rem;
+      color: #666;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: #666;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin: 0.3rem 0.5rem;
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.4rem;
+      }
+
+      section {
+        margin: 1rem;
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="your-photo.jpg" alt="Profile Photo Placeholder"/>
+    <h1>Your Name</h1>
+    <p>Your Title / Role</p>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>
+      <!-- Replace with your summary -->
+      Write a short introduction about yourself, your background, and your career goals.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <!-- Replace with your skills -->
+      <div class="skill">Skill 1</div>
+      <div class="skill">Skill 2</div>
+      <div class="skill">Skill 3</div>
+      <div class="skill">Skill 4</div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+
+    <div class="item">
+      <h3>Job Title - Company</h3>
+      <span>Year – Year</span>
+      <p>Describe your responsibilities and achievements.</p>
+    </div>
+
+    <div class="item">
+      <h3>Job Title - Company</h3>
+      <span>Year – Year</span>
+      <p>Describe your responsibilities and achievements.</p>
+    </div>
+
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="item">
+      <h3>Project Name</h3>
+      <p>Short description of the project.</p>
+      <a href="#">Live Demo</a> | <a href="#">GitHub</a>
+    </div>
+
+    <div class="item">
+      <h3>Project Name</h3>
+      <p>Short description of the project.</p>
+      <a href="#">Live Demo</a> | <a href="#">GitHub</a>
+    </div>
+
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact">
+      <!-- Replace with your links -->
+      <a href="mailto:you@example.com">Email</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">GitHub</a>
+      <a href="#">Portfolio</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Your Name. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
